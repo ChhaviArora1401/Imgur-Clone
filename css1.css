@@ -16,12 +16,12 @@ body{
     height: 400px;
     width: 100%;
     position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    z-index: -1;
 }
 
 .body1{
@@ -36,7 +36,7 @@ a{
 
 .button{
     background-color: hsl(152, 74%, 41%);
-    padding: 6px 10px 6px 10px;
+    padding: 6px 8px 6px 8px;
     float: left;
     font-size: 15px;
     text-align: center;
@@ -91,14 +91,14 @@ a{
 .SubmitInput{
     position: absolute;
     font-size: 20px;
-    right:0;
+    left: 102%;
     bottom: 0;
     margin: auto;
     background: transparent;
     color: #fff;
     border: 0;
     outline: 0 none;
-    padding: 8px;
+    padding: 2px 8px 4px 8px;
     cursor: pointer;
 }
 
@@ -146,14 +146,10 @@ a{
     z-index: 1;
 }
 
-#left{
-    /* margin-left: -7%; */
-    /* margin-top: 3px; */
-    display: inline-flex;
-    /* flex-direction: row; */
+#left{    
+    margin-top: -1%;
+    display: inline-flex;    
     width: 20%;
-    /* flex-wrap: wrap; */
-    /* align-content: stretch; */
 }
 
 #newpost{
@@ -163,7 +159,7 @@ a{
 #ad{
     background-color: #6432f9;
     width:100px;
-    padding: 6px 0px 6px 0px;
+    padding: 6px 6px 6px 6px;
     border-radius: 5px;
     font-size: 15px;
     text-align: center;
@@ -181,6 +177,7 @@ a{
 }
 
 #right{
+    margin-top: -1%;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -199,11 +196,12 @@ a{
     background-image: url('bgdiv.png');
     /* background-attachment:fixed; */
     background-repeat: no-repeat;
-    width: 55.83%;
+    width: 1072px;
     height: 130px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
 }
 
 .images{
@@ -266,7 +264,7 @@ a{
 }
 
 #center-content{
-    width: 72%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     height: 800px;
@@ -307,7 +305,7 @@ a{
 }
 
 #icons{
-    width: 14%;
+    width: 19%;
     float: right;
     /* display: inline-flex; */
     /* margin-right: -50%; */
@@ -323,7 +321,7 @@ a{
 .posts{
     display: flex;
     height: 600px;
-    width: 72%;
+    width: 80%;
     position: absolute;
     margin-top: 2%;
     align-content: stretch;
@@ -345,6 +343,7 @@ a{
 
 .elements img{
     width: 100%;
+    border-radius: 3px;
 }
 
 .info{
@@ -371,15 +370,15 @@ a{
     justify-content: space-between;
 }
 
-
 footer{
     position: fixed;
-    bottom: 1px;
+    bottom: 0;
     width: 100%;
     color: #b4b9c2;
     font-size: 13px;
     display: flex;
     background-color: #474a51;
+    z-index: 1;
 }
 
 #left1{
@@ -389,6 +388,10 @@ footer{
     padding-right: 2px;
     float:left;
     background-color: #33353b;
+}
+
+#dots{
+    font-size: 150%
 }
 
 #app{
