@@ -3,29 +3,31 @@
 }
 
 body{    
-    background-color: #2e3035;
-    font-family: Proxima Nova Regular, Helvetica Neue,Helvetica,Arial,sans-serif;
+    background-color: #2e2435;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: Proxima Nova Regular, Helvetica Neue,Helvetica,Arial,sans-serif; */
     color: #fff;
     margin: 0;
-    font-weight: 600;
-    text-shadow: 0 14px 15px rgb(27 28 30 / 31%)
+    text-shadow: 0 14px 15px rgb(27 28 24 / 31%);
+    text-align: center;
 }
 
 #bg-colg{    
-    /* background-image: linear-gradient(180deg,rgba(39,42,51,0),#181743),
+    background-image: linear-gradient(180deg,rgba(39,42,51,0),#181743),
     linear-gradient(99.3deg,rgba(105,19,254,.28),rgba(27,183,110,.28)),url('https://s.imgur.com/desktop-assets/desktop-assets/emerald-bg-hero.86a9ff60cdfa9a2e75c9709032e6f90d.png');
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 725px;
+    font-size: 32px;
     top: 0;
     left: 0;
-    height: 100vh;
-    z-index: -1; */
+    z-index: -1;
 }
 
 .body1{
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
     
 a{
@@ -120,17 +122,8 @@ a{
     padding:2%;
 }
 
-.ad{
-    background-color: #6432f9;
-    width:100px;
-    padding: 6px 6px 6px 6px;
-    border-radius: 5px;
-    font-size: 15px;
-    text-align: center;
-}
-
 #logo{
-    height:30px;
+    height:24px;
     width:100px;
     float: left;
 }
@@ -164,15 +157,100 @@ a{
     min-width: 314px;
     min-height: 48px;
     height: 100%;
-    background: linear-gradient(
-344.53deg
-,#9c31ff 20.63%,#3592ff 58.04%,#69d8ca 97.43%);
+    background: linear-gradient(344.53deg,#9c31ff 20.63%,#3592ff 58.04%,#69d8ca 97.43%);
     border-radius: 6px;
     font-family: Proxima Nova Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 18px;
     line-height: 18px;
     letter-spacing: .01em;
     padding-top: 15px;
-    padding-left: 14px;
+    padding-left: 90px;
+    padding-bottom: 15px;
+    padding-right: 90px;
     border: none!important;
+}
+
+#i1{
+    background-color: #232265;
+    height: 90%;
+    align-content: center;
+    padding: 4%;
+    font-size: 24px;
+}
+
+#i2{
+    background-color: #181743;
+    background-image: url(https://s.imgur.com/desktop-assets/desktop-assets/emerald-bg-accolades.c3c51e68fc3c326b004c0f051e93ac14.png);
+    background-size: contain;
+    align-content: center;
+    padding: 4%;
+    font-size: 24px;
+}
+
+#i3{
+    background-color: #232265;
+    text-align: center;
+    padding: 4%;
+    font-size: 24px;
+}
+
+#i4{
+    background-color: #181743;
+    background-image: url(https://s.imgur.com/desktop-assets/desktop-assets/emerald-bg-support.1cb90ea8316858df292a3235c3fccde7.png);
+    background-size: cover;
+    padding: 4%;
+    text-align: right;
+    font-size: 24px;
+}
+
+#la{
+    display: flex;
+    float: right;
+    width: 50%;
+    text-align: left;
+    flex-direction: column;
+}
+
+#ta{
+    float: left;
+    width: 80%;
+    text-align: left;
+    flex-direction: column;
+    margin-top: 4%;
+}
+
+#i5{
+    background-color: #232265;
+    padding: 4% 18% 4% 18%;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#last{
+    background-color: #312c7d;
+    padding: 6%;
+}
+
+footer{
+    background-color: #181743;
+    padding: 4%;
+    font-size: 22px;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-content div{
+    display: flex;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#footer-content span{
+    display: inline-flex;
+    right:0;
 }

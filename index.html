@@ -9,6 +9,7 @@
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <title>Imgur: The magic of the Internet</title>
     <script src="https://kit.fontawesome.com/4e692b66fb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                         <span>
                             <img src="ba.png" width="28px" height="32px" style="float: left;" />
                         </span>
-                        <span id="ad"><a href="">Go Ad-Free</a></span>
+                        <span id="ad"><a href="signup.html">Go Ad-Free</a></span>
                         <span style="padding: 6px 0px 6px 0px;"><a href="">Sign in</a></span>
                         <span class="sign"><a href="">Sign up</a></span>
                     </div>
@@ -86,9 +87,24 @@
         <div id="center-content">
             <div id="heading">
                 <div id="line">
-                    <div id="m">MOST VIRAL</div>
+                    <div class="dropdown m">
+                        MOST VIRAL<button onclick="myFunction()" class="dropbtn"><i class="fas fa-caret-down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                         <a href="#home">MOST VIRAL</a>
+                          <a href="#about">USER SUBMITTED</a>
+                          <a href="#contact">HIGHEST SCORING</a>
+                        </div>
+                      </div>
                 </div>
-                <div id="n">NEWEST </div>
+                <div class="dropdown1 n">
+                    NEWEST<button onclick="myFunction1()" class="dropbtn1"><i class="fas fa-caret-down"></i></button>
+                    <div id="myDropdown1" class="dropdown-content1">
+                        <a href = "">POPULAR</a>
+                        <a href = "">NEWEST</a> 
+                        <a href = "">BEST</a>   
+                        <a href = "">RANDOM</a>      
+                    </div>
+                </div>
                 <div id="icons">
                     <span><img
                             src="https://s.imgur.com/desktop-assets/desktop-assets/icon-filter.551faed00bcf04e07c9e01a6874bd652.svg"></span>
@@ -101,7 +117,7 @@
             <br>
             <div class="posts">
                 <div class="col">
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e1.webp">
                         <div class="info">
                             <div class="Status">
@@ -116,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e2.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -130,7 +146,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e3.jpg">
                         <div class="info">
                             <div class="Status">Text</div>
@@ -144,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e4.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -160,7 +176,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e5.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -174,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e6.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -188,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e7.webp">
                         <div class="info">
                             <div class="Status">Text</div>
@@ -202,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e8.webp">
                         <div class="info">
                             <div class="Status">Text</div>
@@ -218,7 +234,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e9.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -232,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e10.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -246,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e11.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -260,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e12.webp" width="220px">
                         <div class="info">
                             <div class="Status">Text</div>
@@ -276,7 +292,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e13.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -290,7 +306,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e14.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -304,7 +320,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e15.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -318,7 +334,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e16.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -334,7 +350,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e17.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -348,7 +364,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e18.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -362,7 +378,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e19.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -376,7 +392,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="elements" id="hei">
+                    <div class="elements">
                         <img src="e20.webp" >
                         <div class="info">
                             <div class="Status">Text</div>
@@ -411,8 +427,7 @@
                     <span>Help</span>
                     <span>Careers</span>
                     <span>Store</span>
-                    <span id="dots">
-                        <i class="fas fa-ellipsis-h"></i>
+                    <span>API</span>
                     </span>
                 </div>
 

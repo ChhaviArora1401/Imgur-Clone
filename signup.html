@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="css.css">
     <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
     <title>Imgur: The magic of the Internet</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/4e692b66fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="bg-colg"></div>
     <div class="body1">
         <header>
             <nav>
@@ -44,35 +46,41 @@
                         <span>
                             <img src="ba.png" width="28px" height="32px" style="float: left;" />
                         </span>
-                        <span id="ad"><a href="">Go Ad-Free</a></span>
                         <span style="padding: 6px 0px 6px 0px;"><a href="">Sign in</a></span>
                         <span class="sign"><a href="">Sign up</a></span>
                     </div>
                 </div>
             </nav>
         </header>
-
-        <div id="main">
-            <img src="emerald.png" width="40%">
-            <span>
-                Enjoy an ad-free experience,<br>
-                unlock fun features, and support Imgur <br>
-                through a Coil membership.
-            </span>
-            <div class="st">
+        <div id="bg-colg">
+            <div id="main">
+                <img src="emerald.png" width="40%">
                 <br>
-                <a class="start" href="">
-                    <span>Sign in to Imgur</span>
-                </a>
+                <span>
+                    <b>Enjoy an ad-free experience,<br>
+                        unlock fun features, and support Imgur <br>
+                        through a Coil membership.</b>
+                </span>
+                <br>
+                <div class="st">
+                    <br>
+                    <a class="start" href="">
+                        <span><b>Sign in to Imgur</b></span>
+                    </a>
+                </div>
+                <!-- <br>
+                <span><i>*Emerald is not available on the Imgur iOS app</i></span> -->
             </div>
-            <span><i>*Emerald is not available on the Imgur iOS app</i></span>
         </div>
+
 
         <div id="i1">
             <span>
                 <h1>Ad-Free Browsing</h1>
             </span>
+            <br>
             <span>All the magic and wonder of Imgur, none of the ads.</span>
+            <br>
             <span><img src="icone.png"></span>
         </div>
 
@@ -81,48 +89,59 @@
             <span>
                 <h1>Accolades</h1>
             </span>
+            <br>
             <span>
                 Celebrate and decorate the best of the best. <br>
                 Posts with the most Accolades get a special highlight on Imgur.
             </span>
+            <br>
             <span>
                 <img src="q6.png">
             </span>
         </div>
 
-        <div d="i3">
+        <div id="i3">
             <span>
                 <img src="toaster.png">
             </span>
-
+            <br>
             <span>
                 <h1> Exclusive Avatars & Trophies </h1>
             </span>
-
+            <br>
             <span>Add a bit o’ zazz to your profile with avatars and trophies exclusive to Emerald members.
             </span>
         </div>
 
         <div id="i4">
             <span>
-                <img src="hyt.png">
+                <img src="hyt.png" style="float: left;">
             </span>
-            <span>
-                <h1>Support Imgur</h1>
+            <br>
+            <span id="la">
+                <span>
+                    <h1 style="width: 50%;">Support Imgur</h1>
+                </span>
+                <span style="width: 70%;">A user-supported Imgur gives us more freedom to <br>build
+                    community-first
+                    features.</span>
             </span>
-            <span>A user-supported Imgur gives us more freedom to <br>build community-first features.</span>
+
         </div>
 
         <div id="i5">
-            <span>
-                <h1>Coil Membership Benefits</h1>
+            <span id="ta">
+                <span>
+                    <h1>Coil Membership Benefits</h1>
+                </span>
+                <span>
+                    Coil is one subscription that unlocks special <br>
+                    features and supports content providers on sites <br>
+                    across the internet like Twitch, Cinnamon, Simmer, <br>
+                    with many more to come.
+                </span>
             </span>
-            <span>
-                Coil is one subscription that unlocks special <br>
-                features and supports content providers on sites <br>
-                across the internet like Twitch, Cinnamon, Simmer, <br>
-                with many more to come.
-            </span>
+            <br>
             <span>
                 <img src="lap.png">
             </span>
@@ -132,10 +151,9 @@
             <div class="st">
                 <br>
                 <a class="start" href="">
-                    <span>Sign in to Imgur</span>
+                    <span><b>Sign in to Imgur</b></span>
                 </a>
             </div>
-            <span><i>*Emerald is not available on the Imgur iOS app</i></span>
         </div>
 
         <footer>
@@ -143,35 +161,34 @@
                 <span>
                     <h1>Tell Me More </h1>
                 </span>
-                <div>
-                    Tell Me More
-                </div>
-                <div>
-                    <!-- plus sign  -->
-                    What exactly am I getting when I get Imgur Emerald?
-                    Your Emerald experience is free from advertising on our iOS app, Android app, and desktop website,
+                <div id="footer-content">
+                    <div>
+                        What exactly am I getting when I get Imgur Emerald?
+                        <span><i class="fas fa-plus"></i></span>
+                        <!-- Your Emerald experience is free from advertising on our iOS app, Android app, and desktop website,
                     including display ads and promoted posts. Imgurians with Emerald will still receive Imgur
                     announcements/promotions such as new product features and community events, even if they’re
                     sponsored. You’ll get a special trophy for your Imgur profile and you’ll unlock fun meme-themed
                     avatars that are exclusive to members.
                     <br>
                     <br>
-                    On the desktop website and Android app only, you unlock the Accolades feature.
-                </div>
-                <div>
-                    What are Accolades?
-                    <!-- plus sign  -->
-                    <!-- Emerald members can give three Accolades per day to the posts that they think are most <br>
+                    On the desktop website and Android app only, you unlock the Accolades feature. -->
+                    </div>
+                    <div>
+                        What are Accolades?
+                        <span><i class="fas fa-plus"></i></span>
+                        <!-- Emerald members can give three Accolades per day to the posts that they think are most <br>
 outstanding. Accolades are still only worth 1 upvote, but they give you an opportunity to make <br>
 OP’s feel warm and special inside by championing their content. They’re rare, so someone is <br>
 going to feel super special when they receive one from you! The posts with the most Accolades <br>
 get a special designation on Imgur. You don’t need to be a member to receive an Accolade --<br>
 only to give one. Go out and make some days brighter. Learn more -->
-                </div>
+                    </div>
 
-                <div>
-                    What is Coil? What do they do with my information?
-                    <!-- plus sign  -->
+                    <div>
+                        What is Coil? What do they do with my information?
+                        <span><i class="fas fa-plus"></i></span>
+                        <!-- <br>
                     Coil’s mission is to re-imagine the way the web monetizes. We’ve partnered with Coil because we
                     believe that offering an alternative to the status quo of paid advertisements can lead to better
                     internet products and experiences that are user-focused.
@@ -185,13 +202,14 @@ only to give one. Go out and make some days brighter. Learn more -->
                     <br>
                     Your privacy is Coil’s top priority. They won’t sell your information, track your browsing habits,
                     or use your data any way outside of your membership. They can totally sit at our lunch table. Learn
-                    more at
-                </div>
+                    more at (link)-->
+                    </div>
 
-                <div>
-                    How does a Coil membership support Imgur?
-
-                    Powering Imgur’s content and community isn’t free. We can make money to run our business in two
+                    <div>
+                        How does a Coil membership support Imgur?
+                        <span><i class="fas fa-plus"></i></span>
+                        <br>
+                        <!-- Powering Imgur’s content and community isn’t free. We can make money to run our business in two
                     ways: by showing advertisements, or through Coil. When you subscribe to Coil and browse Imgur, they
                     handle the logistics, and we receive a percentage of your membership fee from Coil. This sort of
                     direct support gives us the freedom to build a better, more community-focused experience, less
@@ -199,9 +217,12 @@ only to give one. Go out and make some days brighter. Learn more -->
                     <br>
                     <br>
                     If supporting Imgur through Coil doesn’t appeal to you, the free Imgur will still be there just the
-                    way you know and love it today. (Pls whitelist us in your adblocker 🙏).
+                    way you know and love it today. (Pls whitelist us in your adblocker 🙏). -->
+                    </div>
                 </div>
-                Use of Imgur constitutes acceptance of our Terms of Service and Privacy Policy.
+                <span style="font-size:12px">
+                    Use of Imgur constitutes acceptance of our <b>Terms of Service </b>and <b>Privacy Policy</b>.
+                </span>
             </div>
         </footer>
     </div>
